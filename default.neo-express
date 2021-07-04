@@ -1,0 +1,60 @@
+{
+  "magic": 587525438,
+  "address-version": 53,
+  "consensus-nodes": [
+    {
+      "tcp-port": 50013,
+      "ws-port": 50014,
+      "rpc-port": 50012,
+      "wallet": {
+        "name": "node1",
+        "accounts": [
+          {
+            "private-key": "4d259d47fb24a9e4f96989a4a6784e2cbf06aa93e391a4d95a7cb8e042f1d871",
+            "script-hash": "NbCXgDoLRNV92RxvowWd6q8kbVaEFXT3Jq",
+            "label": null,
+            "is-default": true,
+            "contract": {
+              "script": "0c2103b495c97dac6f0b67df7c6ee901fa756d278b6e3c970157af09340fcf4169342841747476aa",
+              "parameters": [
+                "Signature"
+              ]
+            }
+          },
+          {
+            "private-key": "4d259d47fb24a9e4f96989a4a6784e2cbf06aa93e391a4d95a7cb8e042f1d871",
+            "script-hash": "NiZ7S7XA8LmA9Ub3udc1qoDzHMaQVKzKUm",
+            "label": "Consensus MultiSigContract",
+            "is-default": false,
+            "contract": {
+              "script": "110c2103b495c97dac6f0b67df7c6ee901fa756d278b6e3c970157af09340fcf4169342811417bce6ca5",
+              "parameters": [
+                "Signature"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "wallets": [
+    {
+      "name": "gyan",
+      "accounts": [
+        {
+          "private-key": "4cb7a031f9564a2b99efc7ba97fef16883f4f1dd231d43b875cb520d828dc990",
+          "script-hash": "Ncu6AbLmYcky77sLziyDHCLutThePJBHBN",
+          "label": null,
+          "is-default": true,
+          "contract": {
+            "script": "0c210265cc728ba0182d0fa6b08a57dde6ebcc13cb7537ebbb85451ed15840281e1fc841747476aa",
+            "parameters": [
+              "Signature"
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "settings": {}
+}

@@ -1,0 +1,14 @@
+[
+    {
+        "contract": "0xf2ecabedcb6ce089915f5bcec423b9843fd2d082",
+        "operation": "Main",
+        "args": []
+
+    },
+    {
+        "contract": "0x4f1d6de92c00b19eb93c5571dce688148f63c497",
+        "operation": "symbol",
+        "args": []
+
+    }
+]
