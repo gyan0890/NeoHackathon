@@ -1,0 +1,39 @@
+<html>
+<script src="https://unpkg.com/@cityofzion/neon-js@next"></script>
+
+<script>
+    const nodeURL = "http://localhost:50012"
+    const contractHash = "0xf2ecabedcb6ce089915f5bcec423b9843fd2d082"
+    async function helloNeoBlockchain() {
+        const intent = {
+            scriptHash: contractHash,
+            operation: "hello",
+            params: [],
+        }
+
+        const facade = await Neon.api.NetworkFacade.fromConfig({
+            node: nodeURL,
+        })
+
+        const res = await facade.invoke(intent)
+        console.log(res)
+
+        const value = Neon.u.HexString.fromBase64(res.stack[0].value).toAscii()
+        console.log(value)
+        const height = await facade.getRpcNode().getBlockCount()
+
+        document.getElementById("storage").innerHTML = value
+        document.getElementById("block").innerHTML = height
+    }
+    </script>
+
+    <button onclick="helloNeoBlockchain();">
+        Hello    
+    </button>
+
+    <div id="storage"> Storage</div>
+    <div id="block"> Block</div>
+
+
+
+</html>

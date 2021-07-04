@@ -8,4 +8,4 @@ def Main() -> bool:
 
 @public
 def hello() -> str:
-    return bytes.to_str(get("Hello"))
+    return bytes.to_str(get('hello'))
